@@ -19,7 +19,6 @@ export default function SinglePost() {
         `*[slug.current == '${slug}']{
                 title,
                 _id,
-                slug,
                 mainImage{
                     asset-> {
                         _id,
