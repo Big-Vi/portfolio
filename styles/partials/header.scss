@@ -1,0 +1,115 @@
+
+.desktop-nav {
+	ul {
+		@apply relative;
+
+		li {
+			@apply text-black text-base font-sansBold relative z-20;
+
+			a {
+				@apply py-4 relative cursor-pointer whitespace-nowrap;
+			}
+
+			&.line {
+				@apply absolute left-0 w-0 bg-black z-10;
+				height: 1px;
+				bottom: -5px;
+				transition: all 0.3s ease;
+			}
+			&.active ~ .line {
+				width: 89px;
+				left: 11px;
+			}
+			&:nth-child(2).active ~ .line {
+				width: 59px;
+				left: 123px;
+			}
+			&:nth-child(3).active ~ .line {
+				width: 106px;
+				left: 203px;
+			}
+			&:nth-child(4).active ~ .line {
+				width: 103px;
+				left: 330px;
+			}
+			&:nth-child(5).active ~ .line {
+				left: 456px;
+				width: 52px;
+			}
+			&:hover ~ .line {
+				width: 89px !important;
+				left: 11px !important;
+			}
+			&:nth-child(2):hover ~ .line {
+				width: 59px !important;
+				left: 123px !important;
+			}
+			&:nth-child(3):hover ~ .line {
+				width: 106px !important;
+				left: 203px !important;
+			}
+			&:nth-child(4):hover ~ .line {
+				width: 103px !important;
+				left: 330px !important;
+			}
+			&:nth-child(5):hover ~ .line {
+				left: 456px !important;
+				width: 52px !important;
+			}
+
+			&:hover,
+			&:focus { 
+				.sub-ul {
+					@apply opacity-100 visible;
+
+					li {
+						transition: all .3s ease;
+						transform: translateX(0px);
+						@apply opacity-100;
+
+						@for $i from 0 through 20 {
+						    &:nth-child(#{$i + 1}) {
+						      transition-delay: 0.05s * $i;
+						    }
+						}
+					}
+				}
+			}
+		}
+
+		.sub-ul { 
+			@apply absolute opacity-0 invisible z-50 left-0;
+			transition: all .3s ease;
+			width: 260px;
+			top: 38px;
+
+			li { 
+				@apply overflow-hidden ml-0 px-4 opacity-0;
+				transform: translateX(-10px);
+				
+				a {
+					@apply py-2 inline-block relative;
+
+					&:after {
+						transition: all 0.3s ease;
+						content: "";
+						height: 1px;
+						width: 0;
+						left: -5px;
+						@apply absolute bg-black bottom-0 opacity-0 mb-1;
+					}
+				}
+
+				&.active,
+				&:hover {
+					a {
+						&:after {
+							width: calc(100% + 10px);
+							@apply opacity-100;
+						}
+					}
+				}
+			}
+		}
+	}
+}
