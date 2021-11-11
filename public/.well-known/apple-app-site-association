@@ -1,0 +1,15 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "7TR2NKYR3P.com.rowtram.ResumeBuilder" ],
+             "components": [
+               {
+                  "/": "/resume-reset-password/*",
+                  "?": { "tokenId": "?*", "token": "?*" }
+               }
+             ]
+           }
+       ]
+   }
+}
