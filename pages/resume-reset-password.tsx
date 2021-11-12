@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 
   const [error, setError] = useState(null)
 
-  const submit = async (values, e) => {
+  const submit = async (e: any) => {
         setSubmitting(true)
         const { token, tokenId } = router.query;
         console.log(token);
