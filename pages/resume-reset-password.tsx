@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   const [message, setMessage] = useState('')
   const [success, setSuccess] = useState(false)
 
-  const [error, setError] = useState(null)
+  const [error, setError] = useState('')
 
   const submit = async (e: any) => {
         setSubmitting(true)
@@ -27,8 +27,8 @@ const Home: NextPage = () => {
         console.log(token);
         try {
           await app.emailPasswordAuth.resetPassword("222222", token, tokenId);
-        } catch (err) {
-          setError(err.message);
+        } catch (error) {
+          setError('error');
         }
     
         if (error) {
