@@ -9,7 +9,7 @@ const Header = () => {
 	const router = useRouter();
     const uri = router.asPath
 
-	function isActiveLink(linkUri, isHome = false) {
+	function isActiveLink(linkUri:any, isHome = false) {
         if (!isHome && uri.includes(linkUri)) {
             return " active "
         } else if (isHome && uri == linkUri) {
