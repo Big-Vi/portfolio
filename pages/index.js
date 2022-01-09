@@ -25,9 +25,9 @@ const Home = ({ postdata, projectdata, preview }) => {
         <div>
           <h1 className="h1">Vignesh Murugan</h1>
           <p className="-mt-1 mb-2">Senior developer - CORE Education</p>
-          <p className="text-gray-600">I&apos;m building web & mobile applications ranging from small brochure website to complex E-Commerce/E-Learning applications.
+          <p className="text-gray-500">I&apos;m building web & mobile applications ranging from small brochure website to complex E-Commerce/E-Learning applications.
           Libraries & technologies that i use are listed below.</p>
-          <div className="text-gray-600 skills">
+          <div className="text-gray-500 skills">
             <span>React</span><span className="mx-2">|</span> 
             <span>Redux</span><span className="mx-2">|</span> 
             <span>Typescript</span><span className="mx-2">|</span> 
@@ -42,7 +42,7 @@ const Home = ({ postdata, projectdata, preview }) => {
         </div>
 
         {projectdata &&
-          <div className="my-20"> 
+          <div className="my-28"> 
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-8">Projects</h3>
             
               {projectdata.map(project => {
@@ -73,18 +73,18 @@ const Home = ({ postdata, projectdata, preview }) => {
           </div>
         }
         
-        <div className="my-20">
+        <div className="my-28">
           {postdata &&
             <div>
               <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-8">Recent Posts</h3>
-              <div className="flex gap-6 flex-col md:flex-row">
+              <div className="flex gap-6 flex-col md:flex-row posts-home">
                 {postdata.map(post => {
                   return (
                     <Link key={post._id} href={"/blogs/" + post.slug}>
                       <a className="border rounded-xl w-full md:w-1/2 p-1">
                         <div className="flex flex-col justify-between h-full rounded-lg p-4">
                           <div className="flex flex-col md:flex-row justify-between">
-                            <h4 className="text-lg md:text-lg font-medium mb-6 w-full tracking-tight">{post.title}</h4>
+                            <h4 className="text-lg md:text-lg font-medium mb-6 w-full text-gray-500 tracking-tight">{post.title}</h4>
                           </div>
                         </div>
                       </a>

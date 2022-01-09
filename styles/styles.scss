@@ -26,12 +26,27 @@ body {
 
 .home-wysiwyg {
 	p {
-		@apply text-gray-600;
+		@apply text-gray-500;
 	}
 }
 
 .skills {
 	span {
 		display: inline-block;
+	}
+}
+
+footer {
+	p {
+		@apply text-gray-500;	
+	}
+	a {
+		@apply text-gray-500;
+	}
+}
+
+.posts-home {
+	a {
+		@apply border-gray-500;
 	}
 }
