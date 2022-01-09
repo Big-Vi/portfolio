@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         const { token, tokenId } = router.query;
         console.log(token);
         try {
-          await app.emailPasswordAuth.resetPassword("222222", token, tokenId);
+          await app.emailPasswordAuth.resetPassword(token, tokenId, "222222");
         } catch (error) {
           setError('error');
         }

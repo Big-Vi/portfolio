@@ -1,6 +1,6 @@
 {
   "polyfillFiles": [
-    "static/chunks/fallback/polyfills.js"
+    "static/chunks/polyfills.js"
   ],
   "devFiles": [
     "static/chunks/fallback/react-refresh.js"

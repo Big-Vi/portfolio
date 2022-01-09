@@ -1,10 +1,11 @@
 import React from 'react';
 import Header from "./Header";
+import Footer from "./Footer";
 import { motion } from 'framer-motion';
 
 const Layout = ({children}: LayoutProps) => {
     return (
-        <div>
+        <div className="container mx-auto sm:w-1/2 px-4">
             <Header></Header>
                 
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ 
@@ -17,6 +18,8 @@ const Layout = ({children}: LayoutProps) => {
                     {children}
                 </main>
             </motion.div>
+
+            <Footer></Footer>
                         
     </div>
     )

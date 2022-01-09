@@ -5,11 +5,12 @@
 */
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, dialog {
 	letter-spacing: 0.25px;
+	@apply text-white;
 }
 
-p, ul, ol, dl, blockquote, pre, dialog {
+p, ul, ol, dl, blockquote, pre, dialog, a {
 	font-size: theme('fontSize.base-copy-size');
-	@apply font-sans leading-relaxed text-text;
+	@apply font-sans leading-relaxed text-white;
 }
 
 sup {
@@ -68,7 +69,7 @@ p {
 
 ul.dash-list {
 	li {
-		@apply relative text-black font-sansBold;
+		@apply relative text-white font-sansBold;
 		font-size: calc(1.2 * theme('fontSize.base-heading-size'));
 
 		@screen sm { 
@@ -112,7 +113,7 @@ ul.dash-list {
 
 		&:hover {
 			a {
-				@apply text-black;
+				@apply text-white;
 			}
 		}
 	}
@@ -142,7 +143,7 @@ ul.dash-list {
 
 .h1, .wysiwyg h1 {
 	font-size: calc(1.2 * theme('fontSize.base-heading-size'));
-	@apply leading-snug text-black;
+	@apply leading-snug text-white;
 
 	@screen lg {
 		font-size: calc(2 * theme('fontSize.base-heading-size'));
@@ -155,13 +156,13 @@ ul.dash-list {
 
 .h2, .wysiwyg h2 {
 	font-size: calc(1.2 * theme('fontSize.base-heading-size'));
-	@apply leading-snug text-black;
+	@apply leading-snug text-white;
 
-	&.big {
+
 		@screen lg { 
 			font-size: calc(2 * theme('fontSize.base-heading-size'));
 		}
-	}
+	
 }
 
 .h3, .wysiwyg h3 {
@@ -170,11 +171,11 @@ ul.dash-list {
 }
 
 .h4, .wysiwyg h4 {
-	@apply leading-snug text-base text-black;
+	@apply leading-snug text-base text-white;
 }
 
 .h5, .wysiwyg h5 {
-	@apply leading-snug text-base text-black;
+	@apply leading-snug text-base text-white;
 }
 // .h5, .wysiwyg h5 {
 // 	font-size: theme('fontSize.base-copy-size');
@@ -189,9 +190,13 @@ ul.dash-list {
 // 	@apply leading-snug text-base text-yellow;
 // }
 
-button,
-.button,
-.wysiwyg .button,
+.normal-link {
+	text-decoration: underline;
+}
+
+.btn,
+.btn,
+.wysiwyg .btn,
 input[type=submit] {
 	transition: 0.3s;
 	@apply cursor-pointer inline-block;
@@ -203,7 +208,7 @@ input[type=submit] {
 	}
 
 	&.primary {
-		@apply no-underline relative flex items-center justify-center bg-yellow rounded-full text-black w-32 h-32;
+		@apply no-underline relative inline-flex items-center justify-center bg-white text-black px-8 py-2 mt-4;
 
 		span {
 			@apply block w-24 h-auto text-center text-lg;
@@ -405,10 +410,17 @@ a.link {
 			@apply no-underline;
 		}
 	}
+
+	p {
+		@apply text-gray-600;
+		a {
+			@apply text-gray-600;
+		}
+	}
 }
 
 .section-two-coloumn-full p a.cursor-area {
-	@apply font-bold text-black;
+	@apply font-bold text-white;
 }
 
 .footer {
@@ -446,7 +458,7 @@ a.link {
 		}
 
 		li {
-			@apply text-black;
+			@apply text-white;
 
 			a {
 				@apply cursor-pointer relative inline-block;
@@ -476,7 +488,7 @@ a.link {
 	}
 
 	.secondaryUl { 
-		@apply text-sm text-black;
+		@apply text-sm text-white;
 
 		li {
 			a {
@@ -502,7 +514,7 @@ a.link {
 		}
 	}
 	p {
-		@apply text-sm text-black;
+		@apply text-sm text-white;
 	}
 }
 

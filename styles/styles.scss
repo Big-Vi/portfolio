@@ -19,3 +19,13 @@ canvas {
 html {
     scroll-behavior: smooth;
 }
+
+body {
+	background-color: rgb(14 12 11/var(--tw-bg-opacity));
+}
+
+.home-wysiwyg {
+	p {
+		@apply text-gray-600;
+	}
+}

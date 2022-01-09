@@ -1,12 +1,12 @@
 module.exports = { 
-  purge: {
+  content: {
       enabled: true,
-      content: ["./pages/**/*.tsx", "./components/**/*.tsx"],
+      content: ["./pages/**/*.tsx", "./pages/**/*.js", "./components/**/*.tsx"],
   },
   theme: {
       extend: {
           maxWidth: {
-              contained: "1700px",
+              contained: "1200px",
           },
 
           fontSize: {
@@ -41,25 +41,15 @@ module.exports = {
               md: "768px",
               lg: "1024px",
               xl: "1280px",
-              xxl: "1440px",
-              xxxl: "1600px",
           },
       },
 
       fontFamily: {
           sans: [
-              "Jeko-Regular",
-              "system-ui",
-              "-apple-system",
-              "Helvetica Neue",
-              "sans-serif",
+              "DM Sans",
           ],
           sansBold: [
-              "Jeko-SemiBold",
-              "system-ui",
-              "-apple-system",
-              "Helvetica Neue",
-              "sans-serif",
+              "DM Sans",
           ],
           serif: [
               "Domaine-Display",
