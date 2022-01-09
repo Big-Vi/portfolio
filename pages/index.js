@@ -25,7 +25,7 @@ const Home = ({ postdata, projectdata, preview }) => {
         <div>
           <h1 className="h1">Vignesh Murugan</h1>
           <p className="-mt-1 mb-2">Senior developer - CORE Education</p>
-          <p className="text-gray-600">I'm building web & mobile applications ranging from small brochure website to complex E-Commerce/E-Learning applications.
+          <p className="text-gray-600">I&apos;m building web & mobile applications ranging from small brochure website to complex E-Commerce/E-Learning applications.
           Libraries & technologies that i use are listed below.</p>
           <div className="text-gray-600">
             <span>React</span><span className="mx-2">|</span> 
