@@ -32,6 +32,7 @@ const Home = ({ postdata, projectdata, preview }) => {
           Libraries & technologies that i use are listed below.</p>
           <div className="text-gray-500 skills">
             <span>React</span><span className="mx-2">|</span> 
+            <span>React Native</span><span className="mx-2">|</span> 
             <span>Redux</span><span className="mx-2">|</span> 
             <span>Typescript</span><span className="mx-2">|</span> 
             <span>MongoDB</span><span className="mx-2">|</span> 
