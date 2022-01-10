@@ -13,6 +13,9 @@ import client, {
 import { groq } from "next-sanity";
 
 const Home = ({ postdata, projectdata, preview }) => {
+  const colors = ["#6f40a1", "#818CF8", "#f8c818", "#6EE7B7", "#3B82F6", "#9333EA"];
+  const rndInt = Math.floor(Math.random() * 6) + 1
+
   return (
     <div>
       <Head>
@@ -42,7 +45,7 @@ const Home = ({ postdata, projectdata, preview }) => {
         </div>
 
         {projectdata &&
-          <div className="my-28"> 
+          <div className="my-20 md:my-28"> 
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-8">Projects</h3>
             
               {projectdata.map(project => {
@@ -73,7 +76,7 @@ const Home = ({ postdata, projectdata, preview }) => {
           </div>
         }
         
-        <div className="my-28">
+        <div className="my-20 md:my-28">
           {postdata &&
             <div>
               <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-8">Recent Posts</h3>
@@ -81,8 +84,8 @@ const Home = ({ postdata, projectdata, preview }) => {
                 {postdata.map(post => {
                   return (
                     <Link key={post._id} href={"/blogs/" + post.slug}>
-                      <a className="border rounded-xl w-full md:w-1/2 p-1">
-                        <div className="flex flex-col justify-between h-full rounded-lg p-4">
+                      <a className="border rounded-xl w-full md:w-1/2 p-1 hover:scale-[1.01] bg-gradient-to-r p-1 from-[#6f40a1] via-[#3B82F6] to-[#818CF8]">
+                        <div className="flex flex-col justify-between h-full rounded-lg p-4 bg-black">
                           <div className="flex flex-col md:flex-row justify-between">
                             <h4 className="text-lg md:text-lg font-medium mb-6 w-full text-gray-500 tracking-tight">{post.title}</h4>
                           </div>

@@ -24,14 +24,19 @@ const Header = () => {
 		<header>
 			<nav className="my-8 text-center flex header-nav items-center" aria-label="Main">
 				<Link href="/">
-					<a className="font-bold text-2xl">
-						<Image
-							className="module__full-img rounded-full" 
-							src="/img/profile.jpeg"
-							alt="profile-photo"
-							width={60}
-							height={60}
-						/>	
+					<a className="">
+						<div className="rounded-full w-16 h-16 shadow-lg bg-gradient-to-tl from-purple-700/60 to-rose-400/60  p-[3px] group transform ease-out transition hover:scale-105 hover:from-purple-700 hover:to-rose-600 hover:shadow-rose-500/25">
+							<Image
+								className="module__full-img rounded-full" 
+								src="/img/profile.jpeg"
+								alt="profile-photo"
+								sizes="100vw"
+								quality={100}
+								layout="fill"
+								objectFit="cover"
+								objectPosition="center center"
+							/>	
+						</div>
 					</a>
 				</Link>
 				

@@ -21,7 +21,8 @@ html {
 }
 
 body {
-	background-color: rgb(14 12 11/var(--tw-bg-opacity));
+	// background-color: rgb(14 12 11/var(--tw-bg-opacity));
+	@apply bg-black;
 }
 
 .home-wysiwyg {
@@ -33,6 +34,12 @@ body {
 .skills {
 	span {
 		display: inline-block;
+	}
+}
+
+header {
+	img {
+		padding: 4px!important;
 	}
 }
 
