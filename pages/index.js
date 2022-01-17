@@ -20,14 +20,14 @@ const Home = ({ postdata, projectdata, preview }) => {
     <div>
       <Head>
         <title>Vignesh Murugan | Senior developer</title>
-        <meta name="description" content="I'm Vignesh and senior developer currently working for Core education in Christchurch New Zealand." />
+        <meta name="description" content="I'm Vignesh and senior developer currently working for in Christchurch New Zealand." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Layout>
         <div>
           <h1 className="h1">Vignesh Murugan</h1>
-          <p className="-mt-1 mb-2">Senior developer - CORE Education</p>
+          <p className="-mt-1 mb-2">Senior developer</p>
           <p className="text-gray-500">I&apos;m building web & mobile applications ranging from small brochure website to complex E-Commerce/E-Learning applications.
           Libraries & technologies that i use are listed below.</p>
           <div className="text-gray-500 skills">
