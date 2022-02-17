@@ -36,12 +36,12 @@ const Home = ({ postdata, projectdata, preview }) => {
             <span>Redux</span><span className="mx-2">|</span> 
             <span>Typescript</span><span className="mx-2">|</span> 
             <span>MongoDB</span><span className="mx-2">|</span> 
-            <span>Laravel</span><span className="mx-2">|</span> 
+            <span>Next.js</span><span className="mx-2">|</span> 
             <span>Shopify</span><span className="mx-2">|</span> 
-            <span>Vue</span><span className="mx-2">|</span> 
-            <span>VueX</span><span className="mx-2">|</span> 
-            <span>Sanity.io</span><span className="mx-2">|</span>  
-            <span>Swift</span>
+            <span>Sanity.io</span><span className="mx-2">|</span>
+            <span>Python</span><span className="mx-2">|</span> 
+            <span>Django</span><span className="mx-2">|</span>   
+            <span>PostgreSQL</span>
           </div>
         </div>
 
