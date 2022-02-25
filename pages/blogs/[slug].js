@@ -18,7 +18,7 @@ const Blog = ({postsData}) => {
     <div>
       <Head>
         <title>Vignesh Murugan | {postsData.page.title}</title>
-        <meta name="description" content="I'm Vignesh and senior developer currently working for Plato Creative in Christchurch New Zealand." />
+        <meta name="description" content="I'm Vignesh and senior developer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -71,6 +71,7 @@ const getPosts = async (slug, preview) => {
 }
 
 export async function getStaticProps({ params, preview = false }) {
+  console.log(params)
   const postsData = await getPosts((params.slug), {
     active: preview,
   })
