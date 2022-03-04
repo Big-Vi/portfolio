@@ -26,8 +26,8 @@ const Projects = ({projectdata}) => {
         <div className="space-y-16 md:space-y-24">
           <div className="space-y-12 md:items-center">
             <div className="space-y-2">
-              <h1 className="font-sans text-2xl font-black md:text-4xl text-primary">Projects</h1>
-              <p className="font-sans text-xl leading-snug md:text-2xl text-tertiary">A few projects I&apos;ve recently worked on</p>
+              <h1 className="font-sans text-xl font-black md:text-2xl text-primary">Projects</h1>
+              <p className="font-sans text-xl leading-snug md:text-xl text-tertiary">A few projects I&apos;ve recently worked on</p>
             </div><hr/>
             {projectdata.map(project => {
                     return (

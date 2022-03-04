@@ -45,6 +45,11 @@ const Home = ({ postdata, projectdata, preview }) => {
           </div>
         </div>
 
+        <div className="my-6 md:my-8">
+          <p className="mb-2">I’m currently working on: <span className='text-gray-500'>Getting my AWS Developer Associate Certificate.</span></p>
+          <p>I’m currently learning:   <span className="text-gray-500">Docker, Kubernete and relevant Devops stuff</span></p>
+        </div>
+
         {projectdata &&
           <div className="my-20 md:my-28"> 
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-8">Projects</h3>

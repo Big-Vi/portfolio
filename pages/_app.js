@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
 	useEffect(() => {
-      TagManager.initialize(tagManagerArgs)
+      TagManager.initialize(tagManagerArgs) 
       
       // const handleRouteChange = (url) => {
       //     ga.pageview(url)
