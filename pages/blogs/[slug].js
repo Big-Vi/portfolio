@@ -35,6 +35,8 @@ const Blog = ({postsData}) => {
                 className="wysiwyg"
                 blocks={postsData.page.body}
                 serializers={serializers}
+                projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
+                dataset= 'production'
               />
             }
         </div>

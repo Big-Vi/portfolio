@@ -35,6 +35,8 @@ const Project = ({projectsData}) => {
                 className="wysiwyg"
                 blocks={projectsData.page.body}
                 serializers={serializers}
+                projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
+                dataset= 'production'
               />
             }
         </div>
