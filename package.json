@@ -24,8 +24,10 @@
     "react-tooltip": "^4.2.21",
     "realm-web": "0.8.1",
     "sass": "^1.32.7",
+    "sitemap": "^7.1.1",
     "swiper": "^6.4.11",
-    "use-intersection": "^0.2.1"
+    "use-intersection": "^0.2.1",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
