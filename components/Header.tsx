@@ -17,10 +17,6 @@ const Header = () => {
         }
     }
 	return (
-		<>
-		<Head>
-			<link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans&display=swap" rel="stylesheet"></link>
-		</Head>
 		<header>
 			<nav className="my-8 text-center flex header-nav items-center" aria-label="Main">
 				<Link href="/">
@@ -54,7 +50,6 @@ const Header = () => {
 				</ul>
 			</nav>
 		</header>
-	</>
 	)
 }
   

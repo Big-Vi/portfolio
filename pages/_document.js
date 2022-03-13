@@ -25,6 +25,7 @@ class MyDocument extends Document {
                           `,
                         }}
                     /> */}
+                    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans&display=swap" rel="stylesheet"></link>
                 </Head>
                 <body>
                 <script>0</script>

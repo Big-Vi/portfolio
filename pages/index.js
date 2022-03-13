@@ -1,15 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Layout from '@components/Layout'
 import Link from 'next/link'
-import BlockContent from '@sanity/block-content-to-react'
-import { serializers } from '@lib/serializers'
-import client, {
-  getClient,
-  usePreviewSubscription,
-  PortableText,
-} from "@lib/sanity";
-
+import { PortableText } from '@portabletext/react'
+import { components } from '@lib/serializers'
+import { getClient } from "@lib/sanity";
 import { groq } from "next-sanity";
 
 const Home = ({ postdata, projectdata, preview }) => {
@@ -62,14 +56,9 @@ const Home = ({ postdata, projectdata, preview }) => {
                             <div className="">
                               <h4 className="text-lg font-medium w-full mb-2 uppercase">{project.title}</h4>
                               {project.summary &&
-                                <BlockContent
-                                  renderContainerOnSingleChild
-                                  className="wysiwyg home-wysiwyg"
-                                  blocks={project.summary}
-                                  serializers={serializers}
-                                  projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
-                                  dataset= 'production'
-                                />
+                                <div className="wysiwyg home-wysiwyg">
+                                  <PortableText value={project.summary} components={components} />
+                                </div>
                               }
                             </div>
                           </a>
@@ -109,8 +98,6 @@ const Home = ({ postdata, projectdata, preview }) => {
             </div>
           }
         </div>
-        
-
       </Layout>
     </div>
   )
