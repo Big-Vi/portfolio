@@ -104,7 +104,7 @@ const Home = ({ postdata, projectdata, preview }) => {
 }
 
 const queryPost = groq`
-*[_type == "post"] | order(_createdAt desc)[0..3] {
+*[_type == "post"] | order(_createdAt desc)[0..2] {
   ..., 
   author->,
   "slug": slug.current,
@@ -112,7 +112,7 @@ const queryPost = groq`
 }
 `;
 const queryProject = groq`
-*[_type == "project"] | order(_createdAt desc)[0..3] {
+*[_type == "project"] | order(_createdAt desc)[0..2] {
   ..., 
   "slug": slug.current,
   categories[]->
