@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { PortableText } from '@portabletext/react'
 import { components } from '@lib/serializers'
 import { getClient } from "@lib/sanity";
+import Date from '@components/date';
 
 const Blog = ({postsData}) => {
   return (
@@ -20,6 +21,7 @@ const Blog = ({postsData}) => {
           <div className="space-y-12 md:items-center">
             <div className="space-y-2">
               <h1 className="font-sans text-2xl font-black md:text-4xl text-primary">{postsData.page.title}</h1>
+              <Date dateString={postsData.page.publishedAt} />
             </div>
             {postsData.page.body && 
               <div className="wysiwyg home-wysiwyg">
@@ -49,7 +51,8 @@ const getPosts = async (slug, preview) => {
         slugs
       )}] | order(_updatedAt desc)[0]{
         title,
-        body
+        body,
+        publishedAt
       },
     }
     `

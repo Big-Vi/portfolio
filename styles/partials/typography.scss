@@ -47,11 +47,6 @@ p {
 	}
 }
 
-
-
-
-
-
 .section-ourwork-video {
 	.stroke {
 		@apply leading-none;
@@ -171,7 +166,12 @@ ul.dash-list {
 }
 
 .h4, .wysiwyg h4 {
-	@apply leading-snug text-base text-white;
+	font-size: theme('fontSize.base-heading-size');
+	@apply leading-snug text-white;
+
+	@screen lg { 
+		font-size: calc(1.2 * theme('fontSize.base-heading-size'));
+	}
 }
 
 .h5, .wysiwyg h5 {

@@ -52,24 +52,6 @@ export default {
       title: 'Body',
       type: 'blockContent',
     },
-    {
-      name: 'colorFrom',
-      title: 'Color from',
-      type: 'string',
-      initialValue: Math.floor(Math.random()*16777215).toString(16)
-    },
-    {
-      name: 'colorVia',
-      title: 'Color via',
-      type: 'string',
-      initialValue: Math.floor(Math.random()*16777215).toString(16)
-    },
-    {
-      name: 'colorTo',
-      title: 'Color to',
-      type: 'string',
-      initialValue: Math.floor(Math.random()*16777215).toString(16)
-    },
   ],
 
   preview: {

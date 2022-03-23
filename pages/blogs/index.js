@@ -19,7 +19,7 @@ const Blogs = ({postdata}) => {
         <div className="space-y-16 md:space-y-24">
           <div className="space-y-12 md:items-center">
             <div className="space-y-2">
-              <h1 className="font-sans text-2xl font-black md:text-2xl text-primary">Blogs</h1>
+              <h1 className="h1">Blogs</h1>
               <p className="font-sans text-xl leading-snug md:text-xl text-tertiary">Re-thinking on how I&apos;ve built projects & learning that comes with it.</p>
             </div><hr/>
             {postdata.map(post => {
@@ -28,7 +28,7 @@ const Blogs = ({postdata}) => {
                         <Link href={"/blogs/" + post.slug}>
                           <a className="w-full  p-1">
                             <div className="">
-                              <h4 className="text-lg font-medium w-full mb-2 uppercase">{post.title}</h4>
+                              <h4 className="font-medium w-full mb-2 h4">{post.title}</h4>
                               {post.summary &&
                                 <div className="wysiwyg home-wysiwyg">
                                   <PortableText value={post.summary} components={components} />

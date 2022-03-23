@@ -52,7 +52,7 @@ const Home = ({ postdata, projectdata, preview }) => {
                         <Link href={"/projects/" + project.slug}>
                           <a className="w-full  p-1">
                             <div className="">
-                              <h4 className="text-lg font-medium w-full mb-2 uppercase">{project.title}</h4>
+                              <h4 className="h4 font-medium w-full mb-2">{project.title}</h4>
                               {project.summary &&
                                 <div className="wysiwyg home-wysiwyg">
                                   <PortableText value={project.summary} components={components} />
@@ -76,10 +76,10 @@ const Home = ({ postdata, projectdata, preview }) => {
             <div>
               <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-8">Recent Posts</h3>
               <div className="flex gap-6 flex-col md:flex-row posts-home">
-                {postdata.map((post, index) => {
+                {postdata.map(post => {
                   return (
                     <Link key={post._id} href={"/blogs/" + post.slug}>
-                      <a style={{ background: `linear-gradient(#${post.colorFrom}, #${post.colorTo});` }} className={`border rounded-xl w-full md:w-1/2 p-1 hover:scale-[1.01] bg-gradient-to-r p-1`}>
+                      <a className="border rounded-xl w-full md:w-1/2 p-1 hover:scale-[1.01] bg-gradient-to-r p-1">
                         <div className="flex flex-col justify-between h-full rounded-lg p-4 bg-black">
                           <div className="flex flex-col md:flex-row justify-between">
                             <h4 className="text-lg md:text-lg font-medium mb-6 w-full text-gray-500 tracking-tight">{post.title}</h4>

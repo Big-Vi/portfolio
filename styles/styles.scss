@@ -61,5 +61,14 @@ footer {
 .posts-home {
 	a {
 		@apply border-gray-500;
+		&:first-child {
+			@apply from-[#D8B4FE] to-[#818CF8];
+		}
+		&:nth-child(2) {
+			@apply from-[#7d978d] to-[#BEBD7F];
+		}
+		&:nth-child(3) {
+			@apply from-[#6EE7B7] to-[#9333EA];
+		}
 	}
 }
