@@ -79,7 +79,7 @@ const Home = ({ postdata, projectdata, preview }) => {
                 {postdata.map((post, index) => {
                   return (
                     <Link key={post._id} href={"/blogs/" + post.slug}>
-                      <a className={`border rounded-xl w-full md:w-1/2 p-1 hover:scale-[1.01] bg-gradient-to-r p-1 from-[#${post.colorFrom}] via-[#${post.colorVia}] to-[#${post.colorTo}]`}>
+                      <a style={{ background: `linear-gradient(#${post.colorFrom}, #${post.colorTo});` }} className={`border rounded-xl w-full md:w-1/2 p-1 hover:scale-[1.01] bg-gradient-to-r p-1`}>
                         <div className="flex flex-col justify-between h-full rounded-lg p-4 bg-black">
                           <div className="flex flex-col md:flex-row justify-between">
                             <h4 className="text-lg md:text-lg font-medium mb-6 w-full text-gray-500 tracking-tight">{post.title}</h4>
