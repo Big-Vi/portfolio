@@ -7,8 +7,11 @@ import { getClient } from "@lib/sanity";
 import { groq } from "next-sanity";
 
 const Home = ({ postdata, projectdata, preview }) => {
-  const colors = ["#6f40a1", "#818CF8", "#f8c818", "#6EE7B7", "#3B82F6", "#9333EA"];
-  const rndInt = Math.floor(Math.random() * 6) + 1
+  const colors = [
+    ["#6f40a1", "#3B82F6", "#818CF8"],
+    ["#818CF8", "#1E1E1E", "#BEBD7F"],
+    ["#8F8B66", "#646B63", "#CDA434"]
+  ];  
 
   return (
     <div>
@@ -78,10 +81,10 @@ const Home = ({ postdata, projectdata, preview }) => {
             <div>
               <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-8">Recent Posts</h3>
               <div className="flex gap-6 flex-col md:flex-row posts-home">
-                {postdata.map(post => {
+                {postdata.map((post, index) => {
                   return (
                     <Link key={post._id} href={"/blogs/" + post.slug}>
-                      <a className="border rounded-xl w-full md:w-1/2 p-1 hover:scale-[1.01] bg-gradient-to-r p-1 from-[#6f40a1] via-[#3B82F6] to-[#818CF8]">
+                      <a className={`border rounded-xl w-full md:w-1/2 p-1 hover:scale-[1.01] bg-gradient-to-r p-1 from-[${colors[index][0]}] via-[${colors[index][1]}] to-[${colors[index][2]}]`}>
                         <div className="flex flex-col justify-between h-full rounded-lg p-4 bg-black">
                           <div className="flex flex-col md:flex-row justify-between">
                             <h4 className="text-lg md:text-lg font-medium mb-6 w-full text-gray-500 tracking-tight">{post.title}</h4>
