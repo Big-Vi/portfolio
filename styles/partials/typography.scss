@@ -277,28 +277,6 @@ input[type=submit] {
 		@apply block;
 	}
 }
-.crew-filter__item.has-bio > div svg,
-.crew-filter__item.has-bio > div rect,
-.button-border svg,
-.button-border rect {
-	@apply absolute top-0 left-0 right-0 w-full h-full bottom-0;
-	fill: transparent;
-	min-width: 100%;
-}
-
-.crew-filter__item.has-bio > div rect,
-.button-border rect {
-	stroke: #000000;
-	stroke-width: 2;
-	transition: 1.5s ease;
-	stroke-dasharray: 2001;
-	stroke-dashoffset: 2000;
-}
-
-.crew-filter__item.has-bio:hover > div svg rect,
-.animate-border:hover .button-border svg rect {
-	stroke-dashoffset: 0;
-}
 
 a.link {
 	@apply relative;
@@ -551,3 +529,40 @@ a.link {
 		}
 	}
 }
+
+table {
+	@apply text-sm w-full;
+
+	td, th {
+		@apply px-4 py-3;
+	}
+
+	td {
+		@apply text-text;
+	}
+
+	thead {
+		th {
+			@apply text-white text-left;
+		}
+	}
+	tbody {
+		tr {
+			td {
+				&:first-child {
+					@apply font-bold;
+				}
+			}
+			&:nth-child(odd) {
+				td {
+					@apply bg-white text-black;
+				}
+			}
+			&:nth-child(even) {
+				td {
+					@apply bg-black text-white;
+				}
+			}
+		}
+	}
+}	

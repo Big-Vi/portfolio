@@ -12,7 +12,8 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "media-library"
+    "media-library",
+    "table"
   ],
   "env": {
     "development": {

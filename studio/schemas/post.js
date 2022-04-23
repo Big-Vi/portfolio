@@ -52,6 +52,11 @@ export default {
       title: 'Body',
       type: 'blockContent',
     },
+	{
+      name: 'table',
+      title: 'Create table',
+      type: 'table', // Specify 'table' type
+    },
   ],
 
   preview: {

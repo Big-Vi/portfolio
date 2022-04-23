@@ -20,7 +20,7 @@ const Blog = ({postsData}) => {
           <Link href="/blogs"><a className="leading-snug text-tertiary hover:text-gray-1000 dark:hover:text-gray-100">← Blogs</a></Link>
           <div className="space-y-12 md:items-center">
             <div className="space-y-2">
-              <h1 className="font-sans text-2xl font-black md:text-4xl text-primary">{postsData.page.title}</h1>
+              <h1 className="font-sans text-2xl font-black md:text-4xl text-primary mb-2">{postsData.page.title}</h1>
               <Date dateString={postsData.page.publishedAt} />
             </div>
             {postsData.page.body && 
@@ -28,6 +28,19 @@ const Blog = ({postsData}) => {
                 <PortableText value={postsData.page.body} components={components} />
               </div>
             }
+	        {postsData.page.table && 
+			  <table>
+				<tbody>
+					{postsData.page.table.rows.map(row => (
+						<tr key={row._key}>
+						  {row.cells.map(cell => (
+                            <td>{cell}</td>
+						  ))}	
+						</tr>
+					))}
+				</tbody>
+			  </table>
+			}
         </div>
         </div>
       </Layout>
@@ -52,6 +65,7 @@ const getPosts = async (slug, preview) => {
       )}] | order(_updatedAt desc)[0]{
         title,
         body,
+		table,
         publishedAt
       },
     }
