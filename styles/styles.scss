@@ -100,7 +100,7 @@ pre[class*='language-'] {
 
 	font-family: 'Operator Mono', 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 25px;
 	letter-spacing: 0.5px;
 	text-shadow: 0 1px #222245;
@@ -121,7 +121,7 @@ code[class*='language-'] ::selection {
 /* Code blocks. */
 pre[class*='language-'] {
 	padding: 1.5em;
-	margin: 0.5em 0;
+	margin: 1.5em 0;
 	overflow: auto;
 }
 
