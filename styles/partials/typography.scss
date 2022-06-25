@@ -115,7 +115,7 @@ ul.dash-list {
 }
 
 .h1, .wysiwyg h1, .h2, .wysiwyg h2, .h3, .wysiwyg h3, .h4, .wysiwyg h4 {
-	@apply font-sansBold;
+	@apply font-sansBold font-bold;
 	font-variation-settings: 'wdth' 400, 'wght' 700;
 }
 
@@ -137,7 +137,7 @@ ul.dash-list {
 }
 
 .h1, .wysiwyg h1 {
-	font-size: calc(1.2 * theme('fontSize.base-heading-size'));
+	font-size: calc(1.4 * theme('fontSize.base-heading-size'));
 	@apply leading-snug text-white;
 
 	@screen lg {
@@ -155,7 +155,7 @@ ul.dash-list {
 
 
 		@screen lg { 
-			font-size: calc(2 * theme('fontSize.base-heading-size'));
+			font-size: calc(1.6 * theme('fontSize.base-heading-size'));
 		}
 	
 }
@@ -386,13 +386,6 @@ a.link {
 		@apply underline;
 		&:hover {
 			@apply no-underline;
-		}
-	}
-
-	p {
-		@apply text-gray-500;
-		a {
-			@apply text-gray-500;
 		}
 	}
 }
