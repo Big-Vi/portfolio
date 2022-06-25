@@ -17,14 +17,9 @@ let sitemap: Buffer | null = null
 
 const addUrls = async (smStream: SitemapStream) => {
   const allPosts = await getAllDocSlugs('post')
-  const allProjects = await getAllDocSlugs('project')
   
   allPosts.map((post: any) => {
     smStream.write({ url: `/blogs/${post.slug}`, changefreq: 'weekly', priority: 0.8 })
-  })
-
-  allProjects.map((project: any) => {
-    smStream.write({ url: `/projects/${project.slug}`, changefreq: 'weekly', priority: 0.7 })
   })
 }
 

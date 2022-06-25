@@ -162,16 +162,12 @@ ul.dash-list {
 
 .h3, .wysiwyg h3 {
 	@apply leading-snug;
-	font-size: theme('fontSize.base-heading-size');
+	font-size: calc(1.2 * theme('fontSize.base-heading-size'));
 }
 
 .h4, .wysiwyg h4 {
-	font-size: theme('fontSize.base-heading-size');
 	@apply leading-snug text-white;
-
-	@screen lg { 
-		font-size: calc(1.2 * theme('fontSize.base-heading-size'));
-	}
+	font-size: calc(1 * theme('fontSize.base-heading-size'));
 }
 
 .h5, .wysiwyg h5 {

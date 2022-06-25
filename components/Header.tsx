@@ -38,11 +38,6 @@ const Header = () => {
 				
 				<ul className="flex relative">
 					<li className="px-4 ">
-						<Link href="/projects">
-							<a className={isActiveLink('projects')}>Projects</a>
-						</Link>
-					</li>
-					<li className="px-4 ">
 						<Link href="/blogs">
 							<a className={isActiveLink('blogs')}>Blogs</a>
 						</Link>

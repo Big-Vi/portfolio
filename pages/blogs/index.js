@@ -10,7 +10,7 @@ const Blogs = ({ postdata }) => {
   return (
     <div>
       <Head>
-        <title>Vignesh Murugan | Projects</title>
+        <title>Vignesh Murugan | Blogs</title>
         <meta
           name="description"
           content="I'm Vignesh and senior developer currently working for Plato Creative in Christchurch New Zealand."
