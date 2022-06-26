@@ -277,3 +277,7 @@ code.language-css .token.selector > .token.pseudo-element {
 .rehype-code-title + pre {
   @apply mt-0 rounded-t-none;
 }
+
+.highlight-line {
+  @apply block px-4 -mx-4 bg-gray-100 border-l-4 border-blue-500 dark:bg-gray-800;
+}
