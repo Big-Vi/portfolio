@@ -41,14 +41,6 @@ const Blog = ({ postsData, markdown }) => {
               </h1>
               <Date dateString={postsData.page.publishedAt} />
             </div>
-            {postsData.page.body && (
-              <div className="wysiwyg home-wysiwyg">
-                <PortableText
-                  value={postsData.page.body}
-                  components={components}
-                />
-              </div>
-            )}
             <div class="prose wysiwyg">
               {markdown && (
                 <MDXRemote
@@ -93,7 +85,6 @@ const getPosts = async (slug, preview) => {
         slugs
       )}] | order(_updatedAt desc)[0]{
         title,
-        body,
         markdown,
 		    table,
         publishedAt

@@ -350,7 +350,7 @@ a.link {
 		@apply my-6 pl-6;
 
 		li {
-			@apply pl-2 relative mb-4 text-gray-500;
+			@apply pl-2 relative mb-4;
 	
 			@screen lg {
 				@apply mb-4;
@@ -358,7 +358,7 @@ a.link {
 
 			&:before {
 				content: "";
-				@apply absolute bg-gray-500 rounded-full;
+				@apply absolute bg-white rounded-full;
 				width: 10px;
 				height: 10px;
 				top: 15px;
