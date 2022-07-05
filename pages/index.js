@@ -13,7 +13,7 @@ const Home = ({ postdata, preview }) => {
         <title>Vignesh Murugan | Senior developer</title>
         <meta
           name="description"
-          content="I'm Vignesh and senior developer currently working for in Christchurch New Zealand."
+          content="I'm Vignesh and senior developer currently working in Christchurch New Zealand."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
