@@ -24,7 +24,7 @@ const Home = ({ postdata, preview }) => {
           <p className="-mt-1 mb-2">Senior developer</p>
           <p className="text-gray-500">
             I&apos;m building web & mobile applications ranging from small
-            brochure website to complex E-Commerce/E-Learning applications.
+            brochure website to complex E-Commerce applications.
             Libraries & technologies that i use are listed below.
           </p>
           <div className="text-gray-500 skills">
