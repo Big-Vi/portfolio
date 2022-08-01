@@ -8,6 +8,9 @@ module.exports = {
       maxWidth: {
         contained: "1200px",
       },
+      width: {
+        '3/5': '60%',
+      },
 
       fontSize: {
         "base-heading-size": "20px",

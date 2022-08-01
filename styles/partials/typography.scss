@@ -3,14 +3,27 @@
 	if smaller than base = (base font size - target font size) / target font size 
 	if larger than base = (target font size / base font size)
 */
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, dialog {
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, dialog {
 	letter-spacing: 0.25px;
 	@apply text-white;
 }
 
-p, ul, ol, dl, blockquote, pre, dialog, a {
+p, ul, ol, dl, pre, dialog, a {
 	font-size: theme('fontSize.base-copy-size');
 	@apply font-sans leading-relaxed text-white;
+}
+
+blockquote {
+	font-weight: 500;
+    font-style: italic;
+    border-left-width: 0.25rem;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+    padding-left: 1em;
+	border-left-color: grey;
+    p {
+		color: #999;
+	}
 }
 
 sup {
@@ -359,10 +372,10 @@ a.link {
 			&:before {
 				content: "";
 				@apply absolute bg-white rounded-full;
-				width: 10px;
-				height: 10px;
-				top: 15px;
-				left: -24px;
+				width: 6px;
+    height: 6px;
+    top: 11px;
+    left: -12px;
 			}
 		}
 	}

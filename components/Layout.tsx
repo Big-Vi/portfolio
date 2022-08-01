@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Layout = ({children}: LayoutProps) => {
     return (
-        <div className="container mx-auto sm:w-1/2 px-4">
+        <div className="container mx-auto sm:w-3/5 px-4">
             <Header></Header>
                 
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ 
