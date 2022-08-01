@@ -54,7 +54,7 @@ const Home = ({ postdata, preview }) => {
           <p className="mb-2">
             I’m currently working on:{" "}
             <span className="text-gray-500">
-              Getting AWS Developer Associate Certificate.
+              Getting AWS Certified DevOps Engineer - Professional.
             </span>
           </p>
           <p>
